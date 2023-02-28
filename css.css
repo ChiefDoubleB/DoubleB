@@ -1,0 +1,14 @@
+    body {
+      background-color: #085497;
+    }
+
+  hr {background-color: #001E6C;
+  border-style: dashed;
+  height: 2px;
+  }
+  
+  .circular{ border-radius: 100%;}
+  
+  .top-container {padding: 20px}
+ 
+  
