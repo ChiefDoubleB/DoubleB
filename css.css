@@ -4,17 +4,30 @@
       font-family: fantasy;
     }
 
-  hr {background-color: #001E6C;
-  border-style: dashed;
-  height: 2px;
-  }
+    h1 {
+      margin-top: 70px;
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+
+    hr {
+      background-color: #001E6C;
+      border-style: dashed;
+      height: 2px;
+    }
 
 
-    table {margin: 0 auto;}
+    table {
+      margin: 0 auto;
+    }
 
 
-  .circular{ border-radius: 100%;}
-  
-  .top-container {padding: 20px}
- 
-  
+    .circular {
+      border-radius: 100%;
+    }
+
+   
