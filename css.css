@@ -54,9 +54,6 @@ ul {
   padding: 3% 5%
 }
 
-.dice-container {
-  text-align: center;
-}
 
 .contact-box {
   font-size: 25px;
@@ -69,6 +66,9 @@ ul {
 .contact-box3 {
   font-size: 25px;
 }
+.instructions {text-align: left;
+font-size: 30px;
+margin-top: 1rem;}
 
 .btn {
   background: #34c8d9;
