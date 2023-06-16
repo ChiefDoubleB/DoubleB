@@ -66,9 +66,12 @@ ul {
 .contact-box3 {
   font-size: 25px;
 }
-.instructions {text-align: left;
-font-size: 30px;
-margin-top: 1rem;}
+
+.instructions {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 1rem;
+}
 
 .btn {
   background: #34c8d9;
@@ -160,7 +163,7 @@ margin-top: 1rem;}
   text-decoration: none;
 }
 
-.dice-btn {
+.ball-btn {
   background: #34c8d9;
   background-image: -webkit-linear-gradient(top, #34c8d9, #2980b9);
   background-image: -moz-linear-gradient(top, #34c8d9, #2980b9);
@@ -175,13 +178,12 @@ margin-top: 1rem;}
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-top: 100px;
+  margin-top: 40px;
   position: absolute;
-  bottom: 7%;
-  left: 45%;
+  right: 20%;
 }
 
-.dice-btn:hover {
+.ball-btn:hover {
   background: #3cfac7;
   background-image: -webkit-linear-gradient(top, #3cfac7, #346ed9);
   background-image: -moz-linear-gradient(top, #3cfac7, #346ed9);
@@ -190,3 +192,78 @@ margin-top: 1rem;}
   background-image: linear-gradient(to bottom, #3cfac7, #346ed9);
   text-decoration: none;
 }
+
+.shake {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(4px, 4px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-4px, -4px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-7px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(7px, 4px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(4px, -4px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-4px, 4px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-7px, 4px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(7px, 4px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-4px, -4px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(4px, 4px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(4px, -4px) rotate(-1deg);
+  }
+}
+
+.eball {
+  text-align: left;
+  padding-bottom: 70%;
+}
+
+.center {
+  text-align: center;
+  padding-top: 2em;
+
+}
+
+#message {
+  font-size: 35px;
+ position:absolute;
+ right: 180px;
+ bottom: 300px;
+
+}
+
+.ballhead {
+  text-align: center;
+  padding-right: 11%;
+}
+

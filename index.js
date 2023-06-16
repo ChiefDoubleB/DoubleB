@@ -1,28 +1,36 @@
-var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
+function shake() {
 
-var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png-dice6.png
-
-var randomImageSource = "dice-pictures/" + randomDiceImage;
-
-var image1 = document.querySelectorAll("img")[0];
-
-image1.setAttribute("src", randomImageSource);
+  var ball = document.getElementById("8ball")
+  var messageText = document.getElementById("message")
 
 
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+  if (messageText != null) {
+    messageText.parentNode.removeChild(messageText);
+  }
 
-var randomImageSource2 = "dice-pictures/dice" + randomNumber2 + ".png";
 
-document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
+  ball.classList.add("shake");
 
-//Player 1 victory
-if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
-}
-else if (randomNumber2 > randomNumber1) {
-  document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
-}
-else {
-  document.querySelector("h1").innerHTML = "Tie!";
+
+  setTimeout(function () { ball.classList.remove("shake"); }, 1000);
+
+
+  setTimeout(function () { getFortune(); }, 1000);
 }
 
+
+
+function getFortune() {
+
+  var fortunes = ['For Sure', 'It might be possible', 'Without a doubt', 'Yes -- definitely', 'Yep', 'Probably', 'Yes, Signs point to yes', 'Eh, why not?', 'Try again', 'Thats a no from me dawg', 'Dont count on it', 'Definitly not', 'My guy says no', 'Not lookin so good', 'Very unlikely']
+
+
+  var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+
+
+  var parent = document.getElementById("fortune");
+  var newMessage = document.createElement("div");
+  newMessage.setAttribute('id', "message");
+  newMessage.innerHTML = "\"" + fortune + "\"";
+  parent.appendChild(newMessage);
+}
